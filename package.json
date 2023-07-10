@@ -9,6 +9,7 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "packageManager": "pnpm@8.6.2",
   "dependencies": {
     "@astrojs/netlify": "^2.3.0",
     "@libsql/client": "^0.3.0",
