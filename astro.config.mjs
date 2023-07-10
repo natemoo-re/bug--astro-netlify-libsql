@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-
 import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
@@ -8,7 +7,8 @@ export default defineConfig({
   adapter: netlify(),
   vite: {
     ssr: {
-      noExternal: ['@libsql/client']
+      // DO NOT BUNDLE these packages
+      external: ['@libsql/client']
     }
   }
 });
